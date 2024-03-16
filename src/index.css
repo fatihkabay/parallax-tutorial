@@ -72,5 +72,29 @@ body {
 .title {
   font-size: 52px;
   letter-spacing: calc(var(--index) / 2.5);
+}
 
+.img-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 2;
+  transition: var(--transition);
+}
+
+.layer-base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  z-index: 0;
+}
+
+.layer-mid {
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  z-index: 0;
+}
+
+.layer-front {
+  transform: translate3d(0, calc(var(--scrollTop) / 5.2), 0);
 }
