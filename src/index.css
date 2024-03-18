@@ -98,3 +98,42 @@ body {
 .layer-front {
   transform: translate3d(0, calc(var(--scrollTop) / 5.2), 0);
 }
+
+.article-main {
+  --mainarticle-transform: translate3d(0, calc(var(--scrollTop) / -7.6));
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  top: -2px;
+  z-index: 10;
+}
+
+.m-article-content {}
+
+.m-header {
+  text-transform: uppercase;
+  font-size: calc(var(--index) * 2);
+  letter-spacing: calc(var(--index) / 7.6);
+  transform: var(--mainarticle-transform);
+  transition: var(--transition);
+  will-change: transition;
+}
+
+.m-paragraph {
+  max-width: calc(var(--index) * 30);
+  font-size: calc(var(--index) * 0.9);
+  margin-top: calc(var(--index) / 1.25);
+  transform: var(--mainarticle-transform);
+  transition: var(--transition);
+  will-change: transform;
+}
+
+.content {
+  will-change: transform;
+}
