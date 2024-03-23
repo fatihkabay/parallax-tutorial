@@ -36,6 +36,9 @@ function App() {
               <h2 className="m-header">Story to be continued!</h2>
               <p className="m-paragraph">...</p>
             </div>
+            <div className="copy">
+                Kabay INC
+            </div>
           </article>
         </div>
       </div>

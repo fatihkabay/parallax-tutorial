@@ -137,3 +137,12 @@ body {
 .content {
   will-change: transform;
 }
+
+.copy {
+  position: absolute;
+  bottom: calc(var(--index) * 2.5);
+  opacity: 0.5;
+  font-size: calc(var(--index) * 0.75);
+  letter-spacing: calc(var(--index) / 37.6);
+  
+}
